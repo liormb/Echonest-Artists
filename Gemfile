@@ -1,7 +1,33 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+
+# ================ addon ================
+
+# Use to get the woeid of countries from the Yahoo API
+gem 'httparty'
+
+# --------------- debuging --------------
+
+gem 'pry-rails'
+
+# --------------- testing ---------------
+
+gem 'rspec-rails'
+gem 'capybara'
+gem 'simplecov', '~> 0.7.1'
+# gem 'simplecov', :require => false, :group => :test
+gem 'jasmine'
+
+# --------------- Heroku  ---------------
+
+gem 'rails_12factor'
+gem 'newrelic_rpm'
+
+# =======================================
 
 # Use postgresql as the database for Active Record
 gem 'pg'
