@@ -1,1 +1,1 @@
-var app = angular.module('EchoNestArtistsApp',["ngResource"]);
+var app = angular.module('EchoNestArtistsApp',[]);
