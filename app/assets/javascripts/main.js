@@ -14,7 +14,7 @@ var colorOpacity = function(hotttnesss, index){
 };
 
 function effects(){
-	$('.artists-list').animate({opacity: 1}, 1000, 'swing', function(){
+	$('.artists-list').animate({opacity: 1}, 1400, 'swing', function(){
 		$(this).animate({top: 240}, 1000, 'swing');
 	});
 }

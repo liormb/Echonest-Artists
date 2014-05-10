@@ -2,13 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@font-face {
-  font-family: 'Oswald-Regular';
-  src: font-path('Oswald-Regular.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
 	background: rgb(0,0,0) url(image-path('party.jpg')) fixed center center no-repeat; 
+}
+p.lastfm-url span {
+	background: url(image-path('lastfm.png')) center center no-repeat;
 }
