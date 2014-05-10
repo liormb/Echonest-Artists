@@ -36,7 +36,7 @@ namespace :db do
 				familiarity_rank:   artist["familiarity_rank"],
 				hotttnesss:        (artist["hotttnesss"]*100).round(4),
 				hotttnesss_rank:    artist["hotttnesss_rank"],
-				location:           artist["artist_location"]["location"],
+				location:           artist["artist_location"]["location"] || "unknown",
 				official_url:       artist["urls"]["official_url"],
 				lastfm_url:         artist["urls"]["lastfm_url"],
 				score:            ((artist["hotttnesss_rank"] + artist["familiarity_rank"] + artist["discovery_rank"])/3).round()
