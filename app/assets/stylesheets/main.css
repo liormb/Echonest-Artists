@@ -37,7 +37,7 @@ header img {
 	background: rgba(150,150,150,.5);
 	height: 200px;
 	border: 1px solid rgba(22,22,23,.5);
-	color: rgb(22,22,23);
+	color: rgb(40,40,40);
 }
 .artists-list li:hover {
 	background-color: rgba(255,255,255,.8) !important;
