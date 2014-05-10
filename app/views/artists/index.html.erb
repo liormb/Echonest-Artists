@@ -1,0 +1,8 @@
+<div class="main" ng-app="EchoNestArtistsApp" ng-controller="MainCtrl" ng-init="init()">
+	<ul class="artists-list row">
+		<li class="artist col-xs-12 col-sm-6 col-md-4 col-lg-3 animate-transition" ng-repeat="artist in artists" style="background-color: {{ artist.color }};">
+			<strong>{{ artist.hotttnesss_rank }}</strong>
+			<h1>{{ artist.name }}</h1>
+		</li>
+	</ul>
+</div>
