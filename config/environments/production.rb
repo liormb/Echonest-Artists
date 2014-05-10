@@ -79,5 +79,5 @@ EchonestArtists::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Turning off the minifier
-  config.assets.js_compressor = Uglifier.new(mangle: false)
+  # config.assets.js_compressor = Uglifier.new(mangle: false)
 end

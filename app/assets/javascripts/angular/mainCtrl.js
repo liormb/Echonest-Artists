@@ -1,5 +1,5 @@
 
-app.controller("MainCtrl", function($scope, $http){
+app.controller("MainCtrl", ['$scope', '$http', function($scope, $http){
 
 	$scope.artists = [];
 
@@ -17,4 +17,4 @@ app.controller("MainCtrl", function($scope, $http){
  				console.log(error);
       });
 	};
-});
+}]);
