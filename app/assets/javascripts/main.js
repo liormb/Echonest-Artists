@@ -18,7 +18,7 @@ var colorOpacity = function(rank){
 };
 
 function effects(){
-	$('.artists-list').animate({opacity: 1}, 1400, 'swing', function(){
+	$('.artists-list').delay(700).animate({opacity: 1}, 900, 'swing', function(){
 		$(this).animate({top: 0}, 1000, 'swing', function(){
 			$('header').animate({opacity: 1}, 600, 'swing');
 		});
