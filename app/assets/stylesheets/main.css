@@ -37,7 +37,6 @@ header {
 	height: 240px;
 	margin-top: 45px;
 	text-align: center;
-	background-color: transparent !important;
 	opacity: 0;
 }
 header h1 {
@@ -55,7 +54,6 @@ header button:last-child {
 }
 .artists {
 	padding: 0 !important;
-	background-color: transparent !important;
 }
 .artists-list {
 	position: relative;
