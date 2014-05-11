@@ -10,7 +10,7 @@ body {
 	background-color: transparent !important;
 	padding: 0 !important;
 }
-header {
+.top-header {
 	position: fixed;
 	top: 0;
 	background: rgb(22,22,23);
@@ -18,14 +18,45 @@ header {
 	height: 45px;
 	z-index: 9999;
 }
-header img {
+.top-header h1 {
+	margin: 0 0 0 10px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	line-height: 45px;
+	color: rgb(220,220,220);
+}
+.top-header img {
 	position: absolute;
-	top: 0px;
+	top: 0;
 	right: 10px;
+}
+header {
+	height: 240px;
+	margin-top: 45px;
+	text-align: center;
+	opacity: 0;
+}
+header h1 {
+	margin: 56px 0 30px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	text-shadow: 2px 6px 6px rgba(100,100,100,.4);
+	color: white;
+}
+header button {
+	margin-right: 20px;
+}
+header button:last-child {
+	margin-right: 0;
+}
+.artists {
+	padding: 0 !important;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .artists-list {
 	position: relative;
-	top: 45px;
+	top: -240px;
 	margin-bottom: 0; 
 	padding: 0;
 	background: transparent;
@@ -39,7 +70,7 @@ header img {
 	border: 1px solid rgba(22,22,23,.5);
 }
 .artists-list li:hover {
-	background-color: rgba(255,255,255,.8) !important;
+	background: rgba(255,255,255,.9) !important;
 }
 .artists-list p,
 .artists-list a {
@@ -101,4 +132,12 @@ p.lastfm-url span {
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+}
+.btn-default {
+	background: white !important;
+}
+.btn-default:hover {
+	background: rgb(125,184,94) !important;
+	color: white !important;
+	text-shadow: none !important;
 }

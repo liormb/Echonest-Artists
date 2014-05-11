@@ -26,7 +26,7 @@ namespace :db do
 		top_hottt = HTTParty.get(top_hottt_query)
 		artists = top_hottt["response"]["artists"]
 
-		artists.each_with_index do |artist, index|
+		artists.each do |artist|
 			data = {
 				name:               artist["name"],
 				echonest_artist_id: artist["id"],

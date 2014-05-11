@@ -1,7 +1,9 @@
-<div class="main" ng-app="EchoNestArtistsApp" ng-controller="MainCtrl" ng-init="init()">
-	<ul class="artists-list row">
-		<li class="artist col-xs-6 col-sm-6 col-md-4 col-lg-3 animate-transition" ng-repeat="artist in artists" style="background-color: {{ artist.color }};">
-			<p class="hotttnesss-rank">{{ artist.hotttnesss_rank }}</p>
+<div class="artists container-fluid" ng-app="EchoNestArtistsApp" ng-controller="MainCtrl" ng-init="init()">
+	<ul class="artists-list row-fluid">
+		<li class="artist col-xs-12 col-sm-6 col-md-4 col-lg-3 animate-transition"
+				style="background-color: {{ artist.color }};"
+				ng-repeat="artist in artists | orderBy: 'rank'">
+			<p class="hotttnesss-rank">{{ artist.rank }}</p>
 			<p class="score">{{ artist.score }}</p>
 			<p class="name">{{ artist.name }}</p>
 			<p class="location">{{ artist.location }}</p>
