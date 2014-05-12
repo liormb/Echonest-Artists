@@ -38,7 +38,7 @@ namespace :db do
 				location:           artist["artist_location"].nil? ? "unknown" : artist["artist_location"]["location"] || "unknown",
 				official_url:       artist["urls"].nil? ? "#" : artist["urls"]["official_url"] || "#",
 				lastfm_url:         artist["urls"].nil? ? "#" : artist["urls"]["lastfm_url"] || "#",
-				score:            ((artist["hotttnesss_rank"] + artist["familiarity_rank"] + artist["discovery_rank"])/3).round()
+				score:             (artist["hotttnesss_rank"]*0.6 + artist["familiarity_rank"]*0.3 + artist["discovery_rank"]*0.1).round()
 			}
 			Artist.create(data)
 		end

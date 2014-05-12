@@ -82,15 +82,15 @@ header button:last-child {
 	color: rgb(40,40,40);
 	cursor: default;
 }
-p.hotttnesss-rank,
-p.score {
+p.hotttnesss-rank, p.score {
 	position: absolute;
 	top: 10px;
-	left: 20px;
 	font-size: 1.1em;
 }
+p.hotttnesss-rank {
+	left: 20px;
+}
 p.score {
-	left: auto;
 	right: 20px;
 }
 p.name {

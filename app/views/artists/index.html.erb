@@ -3,7 +3,7 @@
 		<li class="artist col-xs-12 col-sm-6 col-md-4 col-lg-3 slow-transition"
 				style="background-color: {{ artist.color }};"
 				ng-repeat="artist in artists | orderBy:field:true">
-			<p class="hotttnesss-rank">{{ $index + 1 }}</p>
+			<p class="hotttnesss-rank">{{ artist.hotttnesss_rank }}</p>
 			<p class="score">{{ artist.score }}</p>
 			<p class="name">{{ artist.name }}</p>
 			<p class="location">{{ artist.location }}</p>
