@@ -1,13 +1,16 @@
 @charset "utf-8";
 
-body {
-	padding: 0 !important;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+html {
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+body {
+	background: transparent !important;
+	padding: 0 !important;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .top-header {
 	position: fixed;
@@ -50,6 +53,7 @@ header button:last-child {
 	margin-right: 0;
 }
 .artists {
+	background: transparent !important;
 	padding: 0 !important;
 }
 .artists-list {
@@ -57,7 +61,7 @@ header button:last-child {
 	top: -240px;
 	margin-bottom: 0; 
 	padding: 0;
-	background: transparent;
+	background: transparent !important;
 	opacity: 0;
 }
 .artists-list li {
