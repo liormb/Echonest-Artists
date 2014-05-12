@@ -9,6 +9,7 @@ app.controller("MainCtrl", ['$scope', '$http', function($scope, $http){
 		$http.get('/artists.json')
 			.success(function(data){
 				angular.forEach(data, function(artist, index){
+					artist.color = self.setColor(artist.hotttnesss);
 					self.artists.push(artist);
 				});
 			})
@@ -27,15 +28,11 @@ app.controller("MainCtrl", ['$scope', '$http', function($scope, $http){
 		}
 	};
 
-	$scope.colorOpacity = function(index){
-		index++;
-		var color = {
-			r:  43 + Math.floor(index/1.5),
-			g: 100 + Math.floor(index/1.5),
-			b: 185 + Math.floor(index/1.5),
-			a: 0.95 - (index/2.8)/100
-		};
-		return "rgba("+color.r+","+color.g+","+color.b+","+color.a+")";
+	$scope.setColor = function(hotttnesss){
+		var percent = hotttnesss / 100;
+		var opacity = Math.pow(percent, 0.7);
+    var color   = 255 - parseInt( parseInt(Math.pow(255, opacity)) * 0.65 );
+    return "rgba("+color+","+color+",255,"+opacity+")";
 	};
 
 }]);

@@ -1,6 +1,6 @@
 
-function buttonClickHandle(){
-	$('.navigation button').on('click', function(event){
+function buttonClickedHandle(){
+	$('.navigation button').on('click', function(){
 		$('.navigation button').removeClass('btn-danger').addClass('btn-default');
 		$(this).toggleClass('btn-default btn-danger');
 	});
@@ -15,6 +15,6 @@ function effects(){
 }
 
 $(function(){
-	buttonClickHandle();
+	buttonClickedHandle();
 	effects();
 });

@@ -71,7 +71,7 @@ header button:last-child {
 	text-align: center;
 }
 .artists-list li:hover {
-	background: rgba(255,255,255,.9) !important;
+	background: rgba(255,255,255,.8) !important;
 }
 .artists-list p,
 .artists-list a {
@@ -151,7 +151,7 @@ p.lastfm-url span {
 	background: white !important;
 }
 .btn-default:hover {
-	background: rgb(125,184,94) !important;
+	background: rgb(74,131,186) !important;
 	color: white !important;
 	text-shadow: none !important;
 }
