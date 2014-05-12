@@ -9,7 +9,6 @@ namespace :db do
 
 		results = 100
 		buckets = [
-			"biographies",
 			"discovery",
 			"discovery_rank",
 			"familiarity",
