@@ -31,11 +31,12 @@ For example, Indila is picking more listeners latly than Klingande.
 ![Echonest-Artists](/app/assets/images/screenshots/rising-artists.png "Rising Artists")
 
 ### 3. Most Familiar Artists
-This filter represent, as its name, the most familiar artist out of all stored artists in Echo Nest database.
+This filter represent, as its name, the most familiar artists out of all stored artists in Echo Nest database.
 
 ![Echonest-Artists](/app/assets/images/screenshots/familiar-artists.png "Familiar Artists")
 
 ### 4. Overall Score
+This chart is filtered by the overall artist's score. The score is a combined from the artist's hottness, discovery and familiarity ranks.
 
 ![Echonest-Artists](/app/assets/images/screenshots/overall-score.png "Overall Score")
 
