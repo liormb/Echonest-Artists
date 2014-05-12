@@ -53,7 +53,6 @@ header button:last-child {
 	margin-right: 0;
 }
 .artists {
-	background: transparent !important;
 	padding: 0 !important;
 }
 .artists-list {
@@ -61,7 +60,6 @@ header button:last-child {
 	top: -240px;
 	margin-bottom: 0; 
 	padding: 0;
-	background: transparent !important;
 	opacity: 0;
 }
 .artists-list li {
@@ -137,11 +135,17 @@ p.lastfm-url span {
 	-o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.55);
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.55);
 }
-.animate-transition {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+.slow-transition {
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+.fast-transition {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 }
 .btn-default {
 	background: white !important;
@@ -150,6 +154,9 @@ p.lastfm-url span {
 	background: rgb(125,184,94) !important;
 	color: white !important;
 	text-shadow: none !important;
+}
+.btn:focus {
+	outline: none !important;
 }
 
 /* responsive media */

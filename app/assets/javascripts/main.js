@@ -1,21 +1,10 @@
 
-function sortHotttnesss(a,b) {
-  if (a.hotttnesss > b.hotttnesss)
-     return -1;
-  if (a.hotttnesss < b.hotttnesss)
-    return 1;
-  return 0;
+function buttonClickHandle(){
+	$('.navigation button').on('click', function(event){
+		$('.navigation button').removeClass('btn-danger').addClass('btn-default');
+		$(this).toggleClass('btn-default btn-danger');
+	});
 }
-
-var colorOpacity = function(rank){
-	var color = {
-		r:  43 + Math.floor(rank/1.5),
-		g: 100 + Math.floor(rank/1.5),
-		b: 185 + Math.floor(rank/1.5),
-		a: 0.95 - (rank/2.8)/100
-	};
-	return "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
-};
 
 function effects(){
 	$('.artists-list').delay(700).animate({opacity: 1}, 900, 'swing', function(){
@@ -26,5 +15,6 @@ function effects(){
 }
 
 $(function(){
+	buttonClickHandle();
 	effects();
 });

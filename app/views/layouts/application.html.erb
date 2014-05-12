@@ -8,7 +8,7 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="EchoNestArtistsApp" ng-controller="MainCtrl" ng-init="init()">
 		<%= render "layouts/templates/topHeader" %>
 		<%= render "layouts/templates/header" %>
 		<%= yield %>
