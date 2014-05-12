@@ -8,9 +8,7 @@ By [Lior Elrom](http://liormb.com/).
 ### Echonest Artists is a visual application that represent the top 100 most hottest artists in the music industry by different score and color.
 
 ## Background
-The Echonest Artists application is a single-page application (SPA) that uses [Echo Nest API](http://the.echonest.com/) to represent top 100 most hottest artists.
-####
-The Echo Nest API is a very powerful platform that synthesizes more than 2.7 million known artists and returning, between other things, the artist's hottness, familiarity and discovery rate set by different criterias.
+The Echonest Artists application is a single-page application (SPA) that uses [Echo Nest API](http://the.echonest.com/) to represent top 100 most hottest artists. The Echo Nest API is a very powerful platform that synthesizes more than 2.7 million known artists and returning, between other things, the artist's hottness, familiarity and discovery rate set by different criterias.
 ####
 Every artist in that list is having its own block that contain its name, location, a link to its official website and to its LastFM page where you can find lots of photos, videos and biography and listen to there songs.
 ####
