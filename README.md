@@ -12,8 +12,7 @@ The Echonest Artists application is a single-page application (SPA) that uses [E
 ####
 Every artist in that list is having its own block that contain its name, location, a link to its official website and to its LastFM page where you can find lots of photos, videos and biography and listen to there songs.
 ####
-Every block also contains 3 special numbers in three different corners: overall rank (top-left), hottnest score (top-right) and an overall score (bottom-right) that is a combanation of the hottness score, familiarity score and discovery score.
-The artists are organized by its rank, according to whatever sorting field the user choose.
+Every block also contains 2 special numbers in two different corners: hottness rank (top-left) and an overall score (top-right) that is a combanation of the hottness rank, familiarity rank and discovery rank.
 
 ##  The Different Charts
 
