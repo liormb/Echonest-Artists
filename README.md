@@ -55,4 +55,4 @@ This filter represent, as its name, the most familiar artist out of all stored a
 * Bootstrap
 
 ## Thanks & Inspiration
-The Echonest Artists application is based on the amazing work of Patrick Morgan who came up with that idea and did a great job putting it all together in his [application](https://github.com/patrickmmorgan/periodic_table_of_echonest).
+The Echonest Artists application is based on the amazing work of [Patrick Morgan](https://github.com/patrickmmorgan) who came up with that idea and did a great job putting it all together in his [application](https://github.com/patrickmmorgan/periodic_table_of_echonest).
