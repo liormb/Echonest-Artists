@@ -1,16 +1,13 @@
 @charset "utf-8";
 
-html {
+body {
+	padding: 0 !important;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-body {
-	background-color: transparent !important;
-	padding: 0 !important;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .top-header {
 	position: fixed;
